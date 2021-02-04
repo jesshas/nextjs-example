@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to weather app!
+          Welcome to Weather App!
         </h1>
         <Weather />
         </main>
