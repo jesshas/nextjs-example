@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import config from '../../config.json';
 import Conditions from './conditions';
+import styles from '../../styles/Home.module.css'
 
 const Weather = () => {
     let [zip, setZip] = useState('');
@@ -27,7 +28,7 @@ const Weather = () => {
                     value={zip}
                     onChange={(e) => setZip(e.target.value)}
                     />
-                    <button type="submit">Get Weather!</button>
+                    <button className={styles.button}><span>Get Weather!</span></button>
             </form>
            <Conditions
                responseObj={responseObj}
